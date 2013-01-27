@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko" xmlns="http://www.w3.org/1999/xhtml" xmlns:tal="http://xml.zope.org/namespaces/tal">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
+  <meta property="og:image" content="http://nrj.miya.pe.kr/i/crab.png" />
+  <meta name="title" content="노량진 수산시장 시세" />
+  <meta name="description" content="오늘의 킹크랩 가격은? 오징어는 한마리에 얼마할까요? 노량진 수산시장 시세에서 확인해보세요." />
+  <title>노량진 수산시장 시세</title>
+  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <link rel="apple-touch-icon" href="/s/i/crab.png" />
+  <link rel="stylesheet" href="/s/c/c.css" />
+</head>
+<body>
+  <header>
+    <h1><a href="/">노량진 수산시장</a> 시세
+      (<a href="http://www.susansijang.co.kr/cost/todayCost.do">${today.strftime("%Y-%m-%d")} 현재</a>)
+    </h1>
+    <div class="fb-like" data-href="http://nrj.miya.pe.kr" data-send="false"
+      data-layout="button_count" data-width="100" data-show-faces="false"></div>
+  </header>
+
+  <article class="${priceChange[0] == '-' and 'minus' or priceChange[0] == '+' and 'plus' or 'balance'}">
+    <a href="/sise/${name}">
+      <h1>${name}</h1>
+      <div class="origin">(원산지: ${fish["home"]})</div>
+      <div class="price">
+        <strong class="num">${price}<i class="pack">/${fish["pack"]}</i></strong>
+        <small class="num">${priceChange}</small>
+      </div>
+    </a>
+  </article>
+</body>
+</html>

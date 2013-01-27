@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #999;
+  color: #333;
+  font: 1.5em/1.2 NanumGothic, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.num {
+  font-family: tahoma, sans-serif;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+header h1 {
+  padding: .7em;
+  font-size: .6em;
+  color: #444;
+}
+
+header .fb-like {
+  position: absolute;
+  top: 0;
+  right: 5px;
+}
+
+article {
+  margin: 0 0 .3em;
+  box-shadow: 0 0 3px #333;
+}
+article a {
+  display: block;
+  padding: .3em .5em;
+  text-decoration: none;
+}
+article.plus a {
+  background: #DC143C;
+}
+article.minus a {
+  background: #1E90FF;
+}
+article.balance a {
+  opacity: .8;
+  background: #696969;
+}
+article a:hover {
+  background: #FF8C00;
+}
+article h1,
+article strong,
+article small {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1em;
+}
+article h1 {
+  width: 30%;
+  text-align: right;
+  color: #fff;
+  text-shadow: 1px 1px 2px #666;
+}
+article .price {
+  display: inline-block;
+}
+article .origin {
+  display: inline-block;
+  color: #fff;
+  font-size: .6em;
+}
+article strong {
+  color: #7FFF00;
+  font-weight: bold;
+}
+article i {
+  opacity: .8;
+  font-size: .5em;
+  font-style: normal;
+}
+article small {
+  font-size: .6em;
+  color: #fff;
+  text-shadow: 0 0 2px #999;
+}
+article .history {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  padding: .2em .2em .2em 31%;
+  background: #666;
+  color: #ccc;
+  font-size: .5em;
+}
+
+@media all and (max-width: 470px) {
+  article .origin {
+    display: none;
+  }
+  
+  article h1 {
+    width: 35%;
+  }
+
+  article .history {
+    padding-left: .2em;
+    text-align: center;
+  }
+}
+
+#graph {
+  margin: 1.5em 0 0;
+  background: #fff;
+  font-size: 12px;
+  overflow-x: auto;
+
+  -moz-box-shadow:    0 0 20px #000000;
+  -webkit-box-shadow: 0 0 20px #000000;
+  box-shadow:         0 0 20px #000000;
+}
+
+svg {
+}
+
+.rule line {
+  stroke: #eee;
+}
+
+#comments_plugin1 {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 10px;
+  box-shadow: 2px 2px 5px #666;
+  background: #fff;
+}

@@ -1,0 +1,12 @@
+{
+  "fishes": [
+    {"consonant": "ㅇ", "name": "(활)왕게", "home": "러시아", "size": "중", "pack": "kg", "packAlias": "kg", "alias": "킹크랩"},
+    {"consonant": "ㄷ", "name": "(활)대게", "home": "러시아", "size": "중", "pack": "kg", "packAlias": "kg", "alias": "대게"},
+    {"consonant": "ㅂ", "name": "(활)바다가재", "home": "캐나다", "size": "중", "pack": "kg", "packAlias": "kg", "alias": "랍스터"},
+    {"consonant": "ㅌ", "name": "(활)털게", "home": "러시아", "size": "중", "pack": "kg", "packAlias": "kg", "alias": "털게"},
+    {"consonant": "ㄱ", "name": "(활)감성돔", "home": "중국", "size": "중", "pack": "kg", "packAlias": "kg", "alias": "감성돔"},
+    {"consonant": "ㅇ", "name": "(활)오징어", "home": "후포", "size": "중", "pack": "미(마리)", "packAlias": "마리", "alias": "오징어"},
+    {"consonant": "ㄴ", "name": "(활)낙지", "home": "여수", "size": "중", "pack": "kg", "packAlias": "kg", "alias": "낙지(여수)"},
+    {"consonant": "ㄴ", "name": "(활)낙지", "home": "중국", "size": "중", "pack": "kg", "packAlias": "kg", "alias": "낙지(중국)"}
+  ]
+}
